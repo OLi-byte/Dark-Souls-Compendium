@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### About the Project
+
+This project is a compendium of dark souls weapons, the user can search for any weapon and see the details about it.
+
+### API 
+
+The API used in this project is the ds-weapons-api, from GitHub user jgalat.
+Link: [https://github.com/jgalat/ds-weapons-api#ds-weapons-api]

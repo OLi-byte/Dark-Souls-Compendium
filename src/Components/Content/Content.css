@@ -1,0 +1,33 @@
+.page_content {
+    display: flex;
+    max-width: 750px;
+    width: 90%;
+    margin: auto;
+    margin-top: 5vh;
+    flex-wrap: nowrap;
+    min-width: 300px;
+}
+
+.introduction_wrapper {
+    background-color: rgb(19, 17, 16);
+    font-size: 20px;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: rgb(165, 158, 151);
+    font-weight: bold;
+    animation: go-back 1s;
+}
+
+@keyframes go-back {
+    from{
+        transform: translateX(200px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

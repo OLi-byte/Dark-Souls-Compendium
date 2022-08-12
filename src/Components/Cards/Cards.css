@@ -1,0 +1,47 @@
+.cards_container {
+    max-width: 750px;
+    min-width: 300px;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-top: 5vh;
+    flex-direction: column;
+    color: rgb(165, 158, 151);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card_wrapper {
+    background-color: rgb(43, 40, 38);
+    max-width: 300px;
+    min-width: 310px;
+    width: 90%;
+    height: 30vh;
+    margin-bottom: 5vh;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em rgb(43, 40, 38);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.card_wrapper:hover{
+    box-shadow: 0 0 1em rgb(224, 197, 44); 
+    transform: scale(1.15);
+}
+
+.weapon_img_wrapper {
+    display: flex;
+    max-width: 200px;
+    min-width: 200px;
+    height: 25vh;
+    justify-content: center;
+}
+
+.cardInfo_wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+

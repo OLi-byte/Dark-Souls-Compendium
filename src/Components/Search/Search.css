@@ -1,0 +1,27 @@
+.search_wrapper {
+    display: flex;
+    max-width: 750px;
+    min-width: 300px;
+    width: 90%;
+    margin: auto;
+    margin-top: 5vh;
+    justify-content: center;
+}
+
+.search_input {
+    width: 90%;
+    height: 1vh;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: rgb(19, 17, 16);
+    color: rgb(165, 158, 151);
+    font-size: 18px;
+    box-shadow: 0 0 1em rgb(43, 40, 38);
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.search_input:hover {
+    box-shadow: 0 0 1em rgba(180, 88, 27, 0.973);
+}
