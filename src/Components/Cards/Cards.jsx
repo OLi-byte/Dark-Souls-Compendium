@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Cards.css";
 
 const Cards = ( {searchInputValue} ) => {
   const [cards, setCards] = useState([]);
   const [loading, setLoading] = useState(false);
   const filterCards = cards.filter((fil) => fil.name.toLowerCase() === searchInputValue.toLowerCase());
+  const nav = useNavigate();
 
   useEffect(() => {
     setLoading(true);
@@ -21,7 +23,6 @@ const Cards = ( {searchInputValue} ) => {
     }
   }, []);
   
-  console.log(cards);
 
   return (
     <>
@@ -31,7 +32,7 @@ const Cards = ( {searchInputValue} ) => {
     }
     {
       (searchInputValue === "") ? cards.map((cardsmap, index) => {
-        return <div className="card_wrapper" key={index}>
+        return <div className="card_wrapper" key={index} onClick={() => {nav(`weapon/${cardsmap.name}`)}}>
           <h2>{cardsmap.name}</h2>  
           <h3>Type: {cardsmap.weapon_type}</h3>
           <div className="cardInfo_wrapper">
@@ -52,7 +53,7 @@ const Cards = ( {searchInputValue} ) => {
           </div>
         </div>;
       }) : filterCards.map((cardsmap, index) => {
-        return <div className="card_wrapper" key={index}>
+        return <div className="card_wrapper" key={index} onClick={() => {nav(`weapon/${cardsmap.name}`)}}>
           <h2>{cardsmap.name}</h2>  
           <h3>Type: {cardsmap.weapon_type}</h3>
           <div className="cardInfo_wrapper">
